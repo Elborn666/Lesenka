@@ -1,0 +1,76 @@
+.hero {
+    position: relative;
+}
+.hero__container {
+    width: 420px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+.hero__body {
+}
+.hero__img {
+    position: relative;
+    z-index: 20;
+    background-image: url('../img/hero/hero-mob.jpg');
+    width: 420px;
+    height: 260px;
+    margin: 0 auto;
+    left: -20px;
+    margin-bottom: 40px;
+}
+.hero__content {
+    margin-left: 100px;
+}
+.hero__undertitle {
+    width: 280px;
+    font-size: 12px;
+    line-height: 1.41;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--button-color);
+}
+.hero__title {
+    width: 280px;
+    margin-bottom: 58px;
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 1.2;
+    &::after{
+        content: "";
+        display: block;
+        position: relative;
+        bottom: -20px;
+        left: -100px;
+        width: 300px;
+        height: 2px;
+        border: 2px solid var(--orange-color);
+    }
+}
+.hero__text {
+    margin-bottom: 40px;
+    font-size: 12px;
+    line-height: 1.58;
+}
+.hero__btn {
+    margin-bottom: 40px;
+    padding: 15px 53px;
+    cursor: pointer;
+}
+.hero__black-box {
+    width: 380px;
+    height: 200px;
+    padding: 40px 68px;
+    margin: 0 auto;
+    background-color: var(--general-color);
+}
+.black__box-title {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.38;
+    color: var(--grey-color);
+}
+.black__box-btn {
+    padding: 15px 53px;
+    cursor: pointer;
+}
