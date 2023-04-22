@@ -33,9 +33,9 @@ body {
 }
 
 .title {
-  font-size: 36px;
+  font-size: 29px;
   font-weight: 700;
-  line-height: 1.19;
+  line-height: 1.2;
 }
 
 .subtitle {
@@ -57,7 +57,7 @@ body {
 }
 
 .container {
-  width: 380px;
+  width: 420px;
   margin: 0 auto;
   padding: 80px 20px;
 }
@@ -215,6 +215,125 @@ a {
 }
 
 .black__box-btn {
+  padding: 15px 53px;
+  cursor: pointer;
+}
+
+.services__body {
+  position: relative;
+}
+.services__body::after {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  background-image: url("../icon/element.svg");
+  bottom: -70px;
+  right: 110px;
+  width: 96px;
+  height: 96px;
+}
+.services__body::before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  background-image: url("../icon/element.svg");
+  top: -90px;
+  right: 0px;
+  width: 96px;
+  height: 96px;
+}
+
+.services__item {
+  position: relative;
+  display: flex;
+  padding: 40px 15px;
+  border: 2px solid var(--grey-color);
+}
+.services__item::after {
+  content: "";
+  position: absolute;
+  top: 36px;
+  left: 9px;
+  width: 21px;
+  height: 80px;
+  background-color: var(--orange-color);
+}
+
+.services__icon {
+  z-index: 20;
+  margin-top: 10px;
+  width: 60px;
+  height: 60px;
+}
+
+.services__thumb {
+  margin-left: 30px;
+}
+
+.services__title {
+  margin-bottom: 8px;
+  width: 240px;
+}
+
+.services__text {
+  width: 240px;
+}
+
+.type__container {
+  width: 420px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+.type__body {
+  padding-bottom: 47px;
+}
+
+.type__title {
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 50;
+}
+
+.type__thumb {
+  border: 2px solid var(--grey-color);
+  position: relative;
+}
+.type__thumb::after {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  top: -55px;
+  left: -25px;
+  width: 100px;
+  height: 14px;
+  background-color: var(--orange-color);
+}
+
+.type__img-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 35px 46px 30px 46px;
+}
+
+.type__box {
+  padding: 20px 30px 38px 30px;
+  text-align: center;
+  background-color: var(--grey-color);
+}
+
+.type__subtitle {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1.6;
+  padding: 0px 0px 6px 0px;
+}
+
+.type__text {
+  margin-bottom: 15px;
+}
+
+.type__button {
   padding: 15px 53px;
   cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

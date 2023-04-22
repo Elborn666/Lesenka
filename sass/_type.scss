@@ -1,0 +1,51 @@
+.type__container {
+    width: 420px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+.type__body {
+    padding-bottom: 47px;
+    //место для кнопоко слайдера
+}
+.type__title {
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 50;
+}
+.type__thumb {
+    border: 2px solid var(--grey-color);
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: 10;
+        top: -55px;
+        left: -25px;
+        width: 100px;
+        height: 14px;
+        background-color: var(--orange-color);
+    }
+}
+.type__img-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 35px 46px 30px 46px;
+}
+.type__box {
+    padding: 20px 30px 38px 30px;
+    text-align: center;
+    background-color: var(--grey-color);
+}
+.type__subtitle {
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 1.6;
+    padding: 0px 0px 6px 0px;
+}
+.type__text {
+    margin-bottom: 15px;
+}
+.type__button {
+    padding: 15px 53px;
+    cursor: pointer;
+}
