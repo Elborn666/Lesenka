@@ -48,4 +48,9 @@
 .type__button {
     padding: 15px 53px;
     cursor: pointer;
+    transition: var(--transition);
+    &:hover {
+        border: 1px solid var(--general-color);
+        background-color: var(--general-color);
+    }
 }

@@ -53,6 +53,11 @@
     margin-bottom: 40px;
     padding: 15px 53px;
     cursor: pointer;
+    transition: var(--transition);
+    &:hover {
+        border: 1px solid var(--general-color);
+        background-color: var(--general-color);
+    }
 }
 .hero__black-box {
     width: 380px;
@@ -70,5 +75,10 @@
 }
 .black__box-btn {
     padding: 15px 53px;
+    transition: var(--transition);
     cursor: pointer;
+    &:hover {
+        border: 1px solid var(--button-color);
+        background-color: var(--button-color);
+    }
 }
