@@ -99,4 +99,8 @@
 .question__policy-link {
     color: rgba(32, 32, 32, 0.4);
     border-bottom: 1px solid rgba(32, 32, 32, 0.4);
+    &:hover {
+        color: var(--button-color);
+        border-bottom: 1px solid var(--button-color);
+     }
 }

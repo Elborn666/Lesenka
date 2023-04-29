@@ -18,6 +18,17 @@
 }
 .hero__content {
     margin-left: 100px;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: 5;
+        background-image: url('../icon/element.svg');
+        bottom: -285px;
+        right: -35px;
+        width: 96px;
+        height: 96px;
+    }
 }
 .hero__undertitle {
     width: 280px;
@@ -60,6 +71,8 @@
     }
 }
 .hero__black-box {
+    position: relative;
+    z-index: 50;
     width: 380px;
     height: 200px;
     padding: 40px 68px;

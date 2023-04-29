@@ -10,16 +10,6 @@
         width: 96px;
         height: 96px;
     }
-    &::before {
-        content: "";
-        position: absolute;
-        z-index: 5;
-        background-image: url('../icon/element.svg');
-        top: -90px;
-        right: 0px;
-        width: 96px;
-        height: 96px;
-    }
 }
 .services__item {
     position: relative;
