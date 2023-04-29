@@ -137,7 +137,7 @@
                 <div class="form__button-wrapper">
                     <button type="submit" class="form__button button-orange">Отправить заявку</button>
                     <p class="form__policy">Нажимая на кнопку вы соглашаетесь
-                        с <span>политикой конфиденциальности</span></p>
+                        с <a href="#" class="form__policy-link">политикой конфиденциальности</a></p>
                 </div>
             </div>
         </section>
@@ -262,35 +262,100 @@
                     <ul class="howwork__list">
                         <li class="howwork__item">
                             <p class="howwork__number-text">01</p>
-                            <h3 class="howwork__subtitle">Ваша заявка на замер</h3>
-                            <p class="howwork__text">Позвоните нам или заполните форму обратной связи заказа на сайте.</p>
+                            <div class="howwork__wrapper">
+                                <h3 class="howwork__subtitle">Ваша заявка на замер</h3>
+                                <p class="howwork__text">Позвоните нам или заполните форму обратной связи заказа на
+                                    сайте.</p>
+                            </div>
                         </li>
                         <li class="howwork__item">
                             <p class="howwork__number-text">02</p>
-                            <h3 class="howwork__subtitle">Замер и проектирование</h3>
-                            <p class="howwork__text">В удобное вам время проводим замеры. Проектируем удобную
-                                конструкцию.</p>
+                            <div class="howwork__wrapper">
+                                <h3 class="howwork__subtitle">Замер и проектирование</h3>
+                                <p class="howwork__text">В удобное вам время проводим замеры. Проектируем удобную
+                                    конструкцию.</p>
+                            </div>
                         </li>
                         <li class="howwork__item">
                             <p class="howwork__number-text">03</p>
-                            <h3 class="howwork__subtitle">Оформление договора</h3>
-                            <p class="howwork__text">Просчитываем смету, готовим договор.
-                                После согласования подписываем договор.</p>
+                            <div class="howwork__wrapper">
+                                <h3 class="howwork__subtitle">Оформление договора</h3>
+                                <p class="howwork__text">Просчитываем смету, готовим договор.
+                                    После согласования подписываем договор.</p>
+                            </div>
                         </li>
                         <li class="howwork__item">
                             <p class="howwork__number-text">04</p>
-                            <h3 class="howwork__subtitle">Выполнение работ</h3>
-                            <p class="howwork__text">Выполняем комплекс работ, качественно и в установленные
-                                договором сроки.</p>
+                            <div class="howwork__wrapper">
+                                <h3 class="howwork__subtitle">Выполнение работ</h3>
+                                <p class="howwork__text">Выполняем комплекс работ, качественно и в установленные
+                                    договором сроки.</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
+        <section class="question">
+            <div class="question__container container">
+                <div class="question__body">
+                    <h2 class="question__title title">У вас остались вопросы?!</h2>
+                    <p class="question__subtitle">Не нашли нужной информации? Интересует что-то конкретное? Напишите нам
+                        и наши специалисты
+                        ответят вам в течении 30 минут!</p>
+                </div>
+                <form class="question__main">
+                    <input type="text" name="name" class="question__name" placeholder="Ваше  имя...">
+                    <input type="tel" name="tell" class="question__tell" placeholder="Ваш телефон...">
+                    <input type="email" name="email" class="question__email" placeholder="Ваш e-mail...">
+                </form>
+                <div class="question__button-wrapper">
+                    <button type="submit" class="question__button button-orange">Отправить заявку</button>
+                    <p class="question__policy">Нажимая на кнопку вы соглашаетесь
+                        с <a href="#" class="question__policy-link">политикой конфиденциальности</a></p>
+                </div>
+            </div>
+            </div>
+        </section>
     </main>
 
-
-    <footer></footer>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__body">
+                <div class="footer__wrapper">
+                    <a href="./index.html" class="footer__link-logo">
+                        <svg class="footer__link-icon">
+                            <use href="./icon/sprite.svg#icon-logo-orange"></use>
+                        </svg>
+                    </a>
+                    <p class="footer__text-designing">Проектирование</p>
+                    <p class="footer__text-creation">Изготовление</p>
+                    <p class="footer__text-assembling">Монтаж</p>
+                </div>
+                <h2 class="footer__title">Монолитные лестницы</h2>
+                <a href="tel:+380631111111" class="footer__link-tell">+38 (063) 111-11-11</a>
+                <button class="footer__btn button-orange">Перезвоните мне!</button>
+                <ul class="footer__list-social">
+                    <li class="footer__item-social">
+                        <a href="https://vk.com/" target="_blank" class="footer__link-social">
+                            <svg class="footer__social-icon">
+                                <use href="./icon/sprite.svg#icon-vk"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__item-social">
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__link-social">
+                            <svg class="footer__social-icon">
+                                <use href="./icon/sprite.svg#icon-instagramm"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <p class="footer__policy">Политика конфиденциальности</p>
+                <p class="footer__copy">&#169; 2020 Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
