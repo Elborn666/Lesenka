@@ -1,0 +1,105 @@
+.about__hero {
+    position: relative;
+}
+.about__hero-container {
+    width: 420px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+.about__hero-body {
+}
+.about__hero-line {
+    border-bottom: 3px solid var(--button-color);
+}
+.about__hero-navigation-mini {
+    margin-top: 15px;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: 10;
+        bottom: -57px;
+        left: -20px;
+        width: 100px;
+        height: 14px;
+        background-color: var(--button-color);
+    }
+}
+.about__hero-link {
+    color: var(--general-color);
+    font-size: 12px;
+    line-height: 1.2;
+}
+.about__hero-link ~ span {
+    color: var(--general-color);
+    font-size: 12px;
+    line-height: 1.2;
+    padding: 0px 10px;
+}
+.about__hero-title {
+    position: relative;
+    z-index: 50;
+    margin-top: 23px;
+    margin-bottom: 40px;
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: 5;
+        background-image: url('../icon/element.svg');
+        top: 0px;
+        right: -20px;
+        width: 96px;
+        height: 96px;
+    }
+}
+.about__hero-img {
+    position: relative;
+    z-index: 60;
+    background-image: url('../img/hero/hero-mob.jpg');
+    width: 420px;
+    height: 260px;
+    margin: 0 auto;
+    left: -20px;
+}
+.about__hero-subtitle {
+    margin-top: 40px;
+}
+.about__hero-text {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.about__hero-activity-title {
+    margin-top: 40px;
+    width: 267px;
+}
+.about__hero-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 26px;
+}
+.about__hero-item {
+    display: flex;
+    align-items: center;
+}
+.about__list-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    line-height: 0.8;
+    font-weight: 400;
+    padding-right: 20px;
+    width: 64px;
+}
+.about__list-title > span {
+    font-size: 36px;
+    line-height: 0.8;
+    font-weight: 400;
+}
+.about__list-text {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.3;
+}
