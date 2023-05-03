@@ -6,11 +6,13 @@
 }
 .footer__wrapper {
     display: flex;
+    justify-content: space-around;
     align-items: center;
+    margin-bottom: 15px;
 }
 .footer__link-icon {
-    width: 200px;
-    height: 110px;
+    width: 129px;
+    height: 51px;
 }
 .footer-box {
     font-weight: 600;
