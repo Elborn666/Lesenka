@@ -1,0 +1,45 @@
+.about__services-body {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: 5;
+        background-image: url('../icon/element.svg');
+        bottom: -70px;
+        right: 110px;
+        width: 96px;
+        height: 96px;
+    }
+}
+.about__services-item {
+    position: relative;
+    display: flex;
+    padding: 40px 15px;
+    border: 2px solid var(--grey-color);
+    &::after {
+        content: "";
+        position: absolute;
+        top: 47px;
+        left: 9px;
+        width: 21px;
+        height: 80px;
+        background-color: var(--orange-color);
+    }
+}
+.about__services-icon {
+    z-index: 20;
+    margin-top: 16px;
+    width: 60px;
+    height: 60px;
+}
+.about__services-thumb {
+    margin-left: 30px;
+}
+.about__services-title {
+    margin-bottom: 8px;
+    width: 240px;
+}
+.about__services-text {
+    width: 240px;
+    line-height: 1.7;
+}

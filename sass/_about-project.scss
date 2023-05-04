@@ -1,0 +1,47 @@
+.about-project__container {
+}
+.about-project__body {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: 10;
+        top: 20px;
+        left: -20px;
+        width: 100px;
+        height: 14px;
+        background-color: var(--orange-color);
+    }
+}
+.about-project__title {
+    position: relative;
+    z-index: 50;
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: 5;
+        background-image: url('../icon/element.svg');
+        top: 0px;
+        right: -10px;
+        width: 96px;
+        height: 96px;
+    }
+}
+.about-project__img-wrapper {
+    position: relative;
+    z-index: 60;
+    margin-top: 40px;
+    margin-bottom: 87px;
+}
+.about-project__btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.about-project__button {
+    padding: 15px 52px;
+    transition: var(--transition);
+    &:hover {
+        background-color: var(--button-color);
+        border: 1px solid var(--button-color);
+    }
+}

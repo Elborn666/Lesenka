@@ -4,14 +4,28 @@
 .about__hero-container {
     width: 420px;
     margin: 0 auto;
-    padding: 0px 20px;
+    padding: 0px 20px 60px 20px;
+    background-color: var(--grey-color);
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 135px;
+        background-color: var(--orange-color);
+    }
 }
 .about__hero-line {
+    position: relative;
+    z-index: 50;
     border-bottom: 3px solid var(--button-color);
 }
 .about__hero-navigation-mini {
     margin-top: 15px;
     position: relative;
+    z-index: 50;
     &::after {
         content: "";
         position: absolute;
@@ -76,12 +90,38 @@
     flex-direction: column;
     gap: 30px;
     margin-top: 26px;
+    position: relative;
+    z-index: 50;
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: 5;
+        background-image: url('../icon/element.svg');
+        top: -100px;
+        right: -20px;
+        width: 96px;
+        height: 96px;
+    }
 }
 .about__hero-item {
     display: flex;
     align-items: center;
+    height: 80px;
+    margin-left: 20px;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: -18px;
+        width: 21px;
+        height: 80px;
+        background-color: var(--orange-color);
+    }
 }
 .about__list-title {
+    position: relative;
+    z-index: 50;
     display: flex;
     flex-direction: column;
     align-items: center;
