@@ -387,7 +387,7 @@ a {
 }
 
 .form__main {
-  padding: 0px 48px 50px 48px;
+  padding: 0px 48px 80px 48px;
 }
 
 .form__name {
@@ -432,6 +432,7 @@ a {
 .form__email {
   width: 282px;
   padding-bottom: 20px;
+  margin-bottom: 50px;
   background-color: inherit;
   outline: 0;
   outline-offset: 0;
@@ -450,7 +451,6 @@ a {
 
 .form__button-wrapper {
   text-align: center;
-  padding-bottom: 80px;
 }
 
 .form__button {
@@ -833,8 +833,8 @@ a {
   background-color: var(--orange-color);
 }
 
-.question__main {
-  padding: 0px 48px 43px 48px;
+.question__form {
+  padding: 0px 48px 0px 48px;
 }
 
 .question__name {
@@ -879,6 +879,7 @@ a {
 .question__email {
   width: 282px;
   padding-bottom: 20px;
+  margin-bottom: 50px;
   background-color: inherit;
   outline: 0;
   outline-offset: 0;

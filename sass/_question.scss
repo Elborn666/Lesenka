@@ -22,8 +22,8 @@
         background-color: var(--orange-color);
     }
 }
-.question__main {
-    padding: 0px 48px 43px 48px;
+.question__form {
+    padding: 0px 48px 0px 48px;
 }
 .question__name {
     width: 282px;
@@ -63,6 +63,7 @@
 .question__email {
     width: 282px;
     padding-bottom: 20px;
+    margin-bottom: 50px;
     background-color: inherit;
     outline: 0;
     outline-offset: 0;

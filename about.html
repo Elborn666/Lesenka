@@ -145,15 +145,20 @@
                         в течении 15 минут!</p>
                 </div>
                 <form class="form__main">
-                    <input type="text" name="name" class="form__name" placeholder="Ваше  имя...">
-                    <input type="tel" name="tell" class="form__tell" placeholder="Ваш телефон...">
-                    <input type="email" name="email" class="form__email" placeholder="Ваш e-mail...">
+                    <input type="text" name="name" class="form__name js-input" required minlength="3"
+                        pattern="^[а-яА-ЯёЁa-zA-Z]+$" placeholder="Ваше  имя...">
+                    <input type="tel" name="tell" class="form__tell js-input js-input-tell" required minlength="10"
+                        pattern="^\(\d{3}\)\d{3}-\d{2}-\d{2}$" title="Телефона в формате (ХХХ)XXX-XX-XX"
+                        placeholder="Ваш телефон...">
+                    <input type="email" name="email" class="form__email js-input js-input-email" required
+                        pattern="^([^ ]+@[^ ]+\.[a-z]{2,6}|)$" placeholder="Ваш e-mail...">
+                        <div class="form__button-wrapper">
+                    <div class="form__button-wrapper">
+                        <button type="submit" class="form__button button-orange">Отправить заявку</button>
+                        <p class="form__policy">Нажимая на кнопку вы соглашаетесь
+                            с <a href="#" class="form__policy-link js-policy">политикой конфиденциальности</a></p>
+                    </div>
                 </form>
-                <div class="form__button-wrapper">
-                    <button type="submit" class="form__button button-orange">Отправить заявку</button>
-                    <p class="form__policy">Нажимая на кнопку вы соглашаетесь
-                        с <a href="#" class="form__policy-link js-policy">политикой конфиденциальности</a></p>
-                </div>
             </div>
         </section>
         <section class="about-project">
@@ -200,16 +205,19 @@
                         и наши специалисты
                         ответят вам в течении 30 минут!</p>
                 </div>
-                <form class="question__main">
-                    <input type="text" name="name" class="question__name" placeholder="Ваше  имя...">
-                    <input type="tel" name="tell" class="question__tell" placeholder="Ваш телефон...">
-                    <input type="email" name="email" class="question__email" placeholder="Ваш e-mail...">
+                <form class="question__form">
+                    <input type="text" name="name" class="question__name" required minlength="3"
+                    pattern="^[а-яА-ЯёЁa-zA-Z]+$" placeholder="Ваше  имя...">
+                    <input type="tel" name="tell" class="question__tell" required minlength="10"
+                    pattern="^\(\d{3}\)\d{3}-\d{2}-\d{2}$" title="Телефона в формате (ХХХ)XXX-XX-XX" placeholder="Ваш телефон...">
+                    <input type="email" name="email" class="question__email" required
+                    pattern="^([^ ]+@[^ ]+\.[a-z]{2,6}|)$" placeholder="Ваш e-mail...">
+                    <div class="question__button-wrapper">
+                        <button type="submit" class="question__button button-orange">Отправить заявку</button>
+                        <p class="question__policy">Нажимая на кнопку вы соглашаетесь
+                            с <a href="#" class="question__policy-link js-policy">политикой конфиденциальности</a></p>
+                    </div>
                 </form>
-                <div class="question__button-wrapper">
-                    <button type="submit" class="question__button button-orange">Отправить заявку</button>
-                    <p class="question__policy">Нажимая на кнопку вы соглашаетесь
-                        с <a href="#" class="question__policy-link js-policy">политикой конфиденциальности</a></p>
-                </div>
             </div>
         </section>
     </main>
