@@ -143,13 +143,18 @@
                         15 минут!</p>
                 </div>
                 <form class="form__main">
-                    <input type="text" name="name" class="form__name" placeholder="Ваше  имя...">
-                    <input type="tel" name="tell" class="form__tell" placeholder="Ваш телефон...">
-                    <input type="email" name="email" class="form__email" placeholder="Ваш e-mail...">
+                    <input type="text" name="name" class="form__name" required minlength="3"
+                        pattern="^[a-zA-Z]+\s[a-zA-Z]+$" placeholder="Ваше  имя...">
+                    <input type="tel" name="tell" class="form__tell" required minlength="10"
+                        pattern="/^\+?(\d{1,3})?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$/"
+                        placeholder="Ваш телефон...">
+                    <input type="email" name="email" class="form__email" required
+                        pattern="/^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i" placeholder="Ваш e-mail...">
                 </form>
                 <div class="form__button-wrapper">
                     <button type="submit" class="form__button button-orange">Отправить заявку</button>
-                    <p class="form__policy">Нажимая на кнопку вы соглашаетесь с <a href="#" class="form__policy-link">политикой конфиденциальности</a></p>
+                    <p class="form__policy js-policy">Нажимая на кнопку вы соглашаетесь с <a href="#"
+                            class="form__policy-link">политикой конфиденциальности</a></p>
                 </div>
             </div>
         </section>
@@ -316,7 +321,7 @@
                 </form>
                 <div class="question__button-wrapper">
                     <button type="submit" class="question__button button-orange">Отправить заявку</button>
-                    <p class="question__policy">Нажимая на кнопку вы соглашаетесь
+                    <p class="question__policy js-policy">Нажимая на кнопку вы соглашаетесь
                         с <a href="#" class="question__policy-link">политикой конфиденциальности</a></p>
                 </div>
             </div>
@@ -360,15 +365,84 @@
                     </li>
                 </ul>
                 <a href="#" class="footer__link-policy">
-                    <p class="footer__policy">Политика конфиденциальности</p>
+                    <p class="footer__policy js-policy">Политика конфиденциальности</p>
                 </a>
                 <p class="footer__copy">&#169; 2020 Все права защищены.</p>
             </div>
         </div>
     </footer>
 
-    <script src="./js/burger.js"></script>
-    <script src="./js/policy.js"></script>
+<div class="backdrop">
+    <div class="modal-window">
+        <div class="modal__container">
+            <div class="modal__body">
+                <svg class="modal__close-btn">
+                    <use href="./icon/sprite.svg#icon-cross"></use>
+                </svg>
+                <div class="modal__content">
+                    <h2 class="modal__title">Политика конфиденциальности</h2>
+                    <p class="modal__text-user">Пользователь сайта <span> _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ .ua</span>
+                        (далее Пользователь)
+                        предоставляя свои персональные данные ( р е к в и з и т ы к о м п а н и и
+                        а д р е с к о м п а н и и
+                        электр. адрес: <span> _ _ _ _@_ _ _ _ _.com</span>, телефон: +38 (063) 111-11-11, далее
+                        Продавец)
+                        дает согласие на обработку, хранение и использование своих персональных данных
+                        в следующих целях:
+                    </p>
+                    <br>
+                    <ul class="modal__list-consent">
+                        <li class="modal__item-consent">Регистрации Пользователя на сайте;</li>
+                        <li class="modal__item-consent">Осуществление клиентской поддержки;</li>
+                        <li class="modal__item-consent">Получения Пользователем информации о маркетинговых событиях;
+                        </li>
+                        <li class="modal__item-consent">Выполнение Продавцом обязательств перед Покупателем.</li>
+                    </ul>
+                    <br>
+                    <p class="modal__text-personal">Под персональными данными подразумевается любая информация личного
+                        характера, позволяющая установить личность Покупателя такая как:</p>
+                        <br>
+                    <ul class="modal__list-personal">
+                        <li class="modal__item-personal">Фамилия, Имя, Отчество;</li>
+                        <li class="modal__item-personal">Контактный телефон;</li>
+                        <li class="modal__item-personal">Адрес электронной почты;</li>
+                        <li class="modal__item-personal">Почтовый адрес.</li>
+                    </ul>
+                    <br>
+                    <p class="modal__text-data">Персональные данные Покупателей хранятся исключительно на электронных
+                        носителях
+                        и обрабатываются с использованием автоматизированных систем, за исключением случаев, когда
+                        неавтоматизированная обработка персональных данных необходима в связи
+                        с исполнением требований законодательства. Продавец обязуется не передавать полученные
+                        персональные данные третьим лицам, за исключением следующих случаев:
+                    </p>
+                    <br>
+                    <ul class="modal__list-data">
+                        <li class="modal__item-data"> По запросам уполномоченных органов государственной власти только
+                            по основаниям
+                            и в порядке, установленным законодательством ;</li>
+                        <li class="modal__item-data">Стратегическим партнерам, которые работают с Продавцом для
+                            предоставления продуктов
+                            и услуг, или тем из них, которые помогают Продавцу реализовывать продукты и услуги
+                            потребителям. Мы предоставляем третьим лицам минимальный объем персональных данных,
+                            необходимый только для оказания требуемой услуги или проведения необходимой
+                            транзакции.</li>
+                    </ul>
+                    <br>
+                    <p class="modal__text-seller">Продавец оставляет за собой право вносить изменения в одностороннем
+                        порядке в настоящие правила, при
+                        условии, что изменения не противоречат действующему законодательству. Изменения условий
+                        настоящих
+                        правил вступают в силу после их публикации на Сайте.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="./js/burger.js" type="module"></script>
+    <script src="./js/policy.js" type="module"></script>
 </body>
 
 </html>
